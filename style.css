@@ -1,0 +1,126 @@
+body {
+  background-color: rgb(245, 224, 227);
+}
+
+body,
+input,
+button {
+  font-family: "Inconsolata", monospace;
+}
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.container h1 {
+  margin-top: 50px;
+}
+span {
+  color: rgb(11, 2, 99);
+  border-bottom: 1px solid rgb(21, 5, 80);
+}
+
+#wishListForm {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+#wish {
+  flex-basis: 60%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid palevioletred;
+  font-size: 20px;
+}
+h1 {
+  color: palevioletred;
+  text-align: center;
+  font-size: 40px;
+}
+
+.btn {
+  border: none;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.btnPrint {
+  width: 40%;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+}
+.wishlistContainer {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wishlistContainer div {
+  text-align: center;
+  width: 80%;
+}
+#wishlist {
+  width: 100%;
+  font-size: 25px;
+}
+
+#wishlist li {
+  padding: 5px;
+  list-style-type: none;
+}
+#wishlist li::before {
+  content: url("./magic.png");
+  padding-right: 15px;
+}
+
+@media (max-width: 1240px) {
+  .container {
+    display: block;
+  }
+  #wishListForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  label,
+  input,
+  button {
+    width: 80%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 966px) {
+  h1 {
+    font-size: 180%;
+  }
+  #wishListForm {
+    padding-top: 3px;
+  }
+}
+@media (max-width: 670px) {
+  h1 {
+    font-size: 150%;
+  }
+  #wishListForm {
+    padding-top: 10px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .btnPrint {
+    font-size: 0.8em;
+    width: 80%;
+  }
+}

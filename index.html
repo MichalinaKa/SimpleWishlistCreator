@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+   
+    <div class="container">
+      <h1>Create and print your <span>Wishlist</span> &hearts;</h1> <div id="siteWithWishlist">
+      <div id="wishListForm">
+        <label for="wish">Write your wish :</label>
+        <input type="text" name="wish" id="wish" />
+        <button class="btn btnAdd" id="btnAdd">add to your list</button>
+      </div>
+      <div class="container wishlistContainer">
+        <div>
+            <ul id="wishlist"></ul>
+      
+        </div>
+        
+      </div>
+      <button class="btn btnPrint" id="btnPrint">Print your list</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
